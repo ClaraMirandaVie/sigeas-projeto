@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Alunos - SIGEAS</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="alunos.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>SIGEAS</h1>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="turmas.html">Turmas</a></li>
+      <li><a href="alunos.html">Alunos</a></li>
+      <li><a href="chamada.html">Chamada</a></li>
+      <li><a href="login.html">Sair</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Gerenciar Alunos</h1>
+
+    <div class="card">
+      <h2>Adicionar Aluno</h2>
+      <form id="formAluno">
+        <input type="text" id="nome" placeholder="Nome do aluno" required>
+        <input type="email" id="email" placeholder="Email do aluno" required>
+        <input type="password" id="senha" placeholder="Senha" required>
+        <select id="turmaId" required></select>
+        <button type="submit">Cadastrar Aluno</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Lista de Alunos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Turma</th>
+          </tr>
+        </thead>
+        <tbody id="listaAlunos"></tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

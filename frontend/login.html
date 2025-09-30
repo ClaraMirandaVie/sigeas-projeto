@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - SIGEAS</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="login.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Login</h1>
+      <form id="formLogin">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="senha" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="popupModal" class="modal">
+    <div class="modal-content">
+      <h2>Login encontrado!</h2>
+      <p>Bem-vindo ao SIGEAS</p>
+      <button id="continuarBtn">Continuar</button>
+    </div>
+  </div>
+</body>
+</html>

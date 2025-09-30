@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Chamada - SIGEAS</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="chamada.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>SIGEAS</h1>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="turmas.html">Turmas</a></li>
+      <li><a href="alunos.html">Alunos</a></li>
+      <li><a href="chamada.html">Chamada</a></li>
+      <li><a href="login.html">Sair</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Registrar Chamada</h1>
+
+    <div class="card">
+      <h2>Selecionar Turma</h2>
+      <select id="turmaId" required></select>
+      <button id="carregarAlunos">Carregar Alunos</button>
+    </div>
+
+    <div class="card">
+      <h2>Lista de Presença</h2>
+      <form id="formChamada">
+        <table>
+          <thead>
+            <tr>
+              <th>Aluno</th>
+              <th>Presente</th>
+            </tr>
+          </thead>
+          <tbody id="listaChamada"></tbody>
+        </table>
+        <button type="submit">Salvar Chamada</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
